@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="api-gateway" />
         <module name="user-ws" />
         <module name="eureka-server" />
         <module name="account-mgmt-ws" />
@@ -13,6 +14,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="account-mgmt-ws" target="1.8" />
+      <module name="api-gateway" target="17" />
       <module name="eureka-server" target="1.8" />
       <module name="user-ws" target="1.8" />
     </bytecodeTargetLevel>
@@ -20,6 +22,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="account-mgmt-ws" options="-parameters" />
+      <module name="api-gateway" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="user-ws" options="-parameters" />
     </option>
